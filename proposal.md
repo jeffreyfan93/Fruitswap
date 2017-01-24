@@ -37,16 +37,20 @@ it needs to be updated.
 ## Implementation Timeline
 
 **Day 1:** Set up all the necessary files. Create webpack.config.js as
-well as package.json. Set up a starting board filled with fruit.
+well as package.json. Set up a starting board filled with fruit objects.
+Also make sure the starting board has no matches.
 
-**Day 2:** Implement drag and drop for the fruit. Start writing the logic
-for handling matching fruit.
+**Day 2:** Implement drag and drop for the fruit using javascript's
+built in functions. Start writing the logic for handling matching fruit,
+such as 3, 4, and 5 in a row, T, and L matches.
 
 **Day 3:** Finish matching fruit logic and replacing the matched fruit
-with new fruit.
+with new fruit. Add a scoring system which adds the score based on the
+type of match made.
 
 **Day 4:** Install controls for starting and pausing the game. Style
-the frontend, making it polished and professional.
+the frontend, making it polished and professional. Add music and sound
+effects to go with the game.
 
 ## Bonus Features
 * Add options for different game modes
