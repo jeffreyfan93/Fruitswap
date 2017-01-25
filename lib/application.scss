@@ -1,0 +1,141 @@
+body {
+  width: 90vw;
+  display: flex;
+  flex-direction: column;
+
+}
+
+.header {
+  height: 20vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-github {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 16vh;
+  height: 16vh;
+}
+
+.header-fruit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 26vh;
+  height: 16vh;
+}
+
+.header-timer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 16vh;
+  height: 16vh;
+}
+
+.header-swap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 26vh;
+  height: 16vh;
+}
+
+.header-linkedin {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 16vh;
+  height: 16vh;
+}
+
+.body {
+  display: flex;
+  justify-content: space-around;
+  height: 70vh;
+  align-items: center;
+}
+
+.body-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+  height: 60vh;
+}
+
+.body-game-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 75px;
+  width: 150px;
+  background-color: purple;
+
+}
+
+.body-music-toggle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 50px;
+  width: 50px;
+  background-color: blue;
+}
+
+.grid {
+  display: flex;
+}
+
+.body-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+  height: 60vh;
+}
+
+.body-score {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 75px;
+  width: 150px;
+  background-color: purple;
+}
+
+.body-high-scores {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 250px;
+  width: 150px;
+  background-color: purple;
+}
+
+.body-about-rules {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 75px;
+  width: 150px;
+  background-color: purple;
+}
+
+.fruit-item {
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  vertical-align: middle;
+  border: 1px solid black;
+}
