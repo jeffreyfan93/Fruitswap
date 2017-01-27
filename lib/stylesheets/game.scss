@@ -1,8 +1,14 @@
 body {
-  width: 90vw;
+  display: flex;
+  justify-content: center;
+  background-color: #7EC0EE;
+  font-family: Rum Raisin;
+}
+
+.screen {
+  width: 70vw;
   display: flex;
   flex-direction: column;
-
 }
 
 .header {
@@ -18,6 +24,9 @@ body {
   align-items: center;
   width: 16vh;
   height: 16vh;
+  z-index: 10;
+
+  font-size: 32px;
 }
 
 .header-fruit {
@@ -26,6 +35,9 @@ body {
   align-items: center;
   width: 26vh;
   height: 16vh;
+
+  font-size: 96px;
+  color: #ff8000;
 }
 
 .header-timer {
@@ -34,6 +46,8 @@ body {
   align-items: center;
   width: 16vh;
   height: 16vh;
+
+  font-size: 72px;
 }
 
 .header-swap {
@@ -42,6 +56,10 @@ body {
   align-items: center;
   width: 26vh;
   height: 16vh;
+
+  font-size: 96px;
+  color: #ff8000;
+
 }
 
 .header-linkedin {
@@ -50,6 +68,9 @@ body {
   align-items: center;
   width: 16vh;
   height: 16vh;
+
+  font-size: 32px;
+
 }
 
 .body {
@@ -75,8 +96,15 @@ body {
 
   height: 75px;
   width: 150px;
-  background-color: purple;
+  border: 1px solid black;
 
+  font-size: 28px;
+  background-color: #ff6666;
+  color: black;
+}
+
+.body-game-buttons:hover {
+  transform: scale(1.1);
 }
 
 .body-music-toggle {
@@ -86,11 +114,25 @@ body {
 
   height: 50px;
   width: 50px;
-  background-color: blue;
+  border: 1px solid black;
+
+  background-color: #6600ff;
+}
+
+.body-music-toggle:hover {
+  transform: scale(1.1);
+}
+
+#game-grid {
+  width: 500px;
+  height: 500px;
+  background-color: #ff6666;
 }
 
 .grid {
   display: flex;
+  border: 2px solid black;
+
 }
 
 .fruit-item {
@@ -109,7 +151,7 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  
+
   font-size: 48px;
   background-color: orange;
 }
@@ -130,18 +172,12 @@ body {
 
   height: 75px;
   width: 150px;
-  background-color: purple;
+  border: 1px solid black;
+  font-size: 28px;
+
+  background-color: #ff6666;
 }
 
-.body-high-scores {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  height: 250px;
-  width: 150px;
-  background-color: purple;
-}
 
 .body-about-rules {
   display: flex;
@@ -150,5 +186,35 @@ body {
 
   height: 75px;
   width: 150px;
-  background-color: purple;
+  border: 1px solid black;
+  font-size: 28px;
+
+  background-color: #ff6666;
+}
+
+.body-about-rules:hover {
+  transform: scale(1.1);
+}
+
+.rules {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 24px;
+  color: black;
+}
+
+.rules-title {
+  font-size: 36px;
+  margin-bottom: 30px;
+  margin-top: 20px;
+
+}
+
+.rules-start {
+  font-size: 28px;
+  margin-top: 30px;
+
 }

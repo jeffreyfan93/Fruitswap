@@ -5,35 +5,46 @@
     <meta charset="utf-8">
     <title>Fruitswap</title>
 
-    <link rel="stylesheet" href="./lib/application.scss">
+    <link rel="stylesheet" href="./lib/stylesheets/application.scss">
+    <link href="https://fonts.googleapis.com/css?family=Rum+Raisin" rel="stylesheet">
     <script type="text/javascript" src="./lib/bundle.js"></script>
+    <script src="https://use.fontawesome.com/ead056a3a4.js"></script>
 
   </head>
 
   <body>
-    <div class="header">
-      <div class="header-github">Github</div>
-      <div class="header-fruit">FRUIT</div>
-      <div class="header-timer" id="timer">60</div>
-      <div class="header-swap">SWAP</div>
-      <div class="header-linkedin">LinkedIn</div>
-    </div>
-
-    <div class="body">
-      <div class="body-left">
-        <button class="body-game-buttons" onClick="Game.startGame()">Start/Reset</button>
-        <div class="body-game-buttons" onClick="Game.pauseGame()">Pause</div>
-        <!-- <div class="body-game-buttons" onClick="Game.resetGame()">Reset</div> -->
-        <div class="body-music-toggle">Music Toggle</div>
+    <div class="screen">
+      <div class="header">
+        <div class="header-github">
+          <a href="https://github.com/jeffreyfan93">
+            <i class="fa fa-github fa-2x" aria-hidden="true"></i>
+          </a>
+        </div>
+        <div class="header-fruit">Fruit</div>
+        <div class="header-timer" id="timer">60</div>
+        <div class="header-swap">Swap</div>
+        <div class="header-linkedin">
+          <a href="https://www.linkedin.com/in/jeffrey-fan-712494b0?trk=nav_responsive_tab_profile">
+            <i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i>
+          </a>
+        </div>
       </div>
 
-      <div id="game-grid" class="body-middle"></div>
+      <div class="body">
+        <div class="body-left">
+          <button class="body-game-buttons" onClick="Game.startGame()">Start</button>
+          <button class="body-game-buttons" onClick="Game.pauseGame()">Pause</button>
+          <div class="body-game-buttons" onClick="Game.resetGame()">Reset</div>
+          <button class="body-music-toggle" onClick="Game.toggleMusic()">Sound</button>
+        </div>
 
-      <div class="body-right">
-        <div class="body-score" id="score">Score</div>
-        <div class="body-about-rules">About/Rules</div>
+        <div id="game-grid" class="body-middle"></div>
+
+        <div class="body-right">
+          <div class="body-score" id="score"></div>
+          <button class="body-about-rules" onClick="Game.rules()">About/Rules</button>
+        </div>
       </div>
-
     </div>
 
   </body>
