@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
   <head>
@@ -13,24 +14,23 @@
     <div class="header">
       <div class="header-github">Github</div>
       <div class="header-fruit">FRUIT</div>
-      <div class="header-timer">Timer</div>
+      <div class="header-timer" id="timer">60</div>
       <div class="header-swap">SWAP</div>
       <div class="header-linkedin">LinkedIn</div>
     </div>
 
     <div class="body">
       <div class="body-left">
-        <div class="body-game-buttons">Start</div>
-        <div class="body-game-buttons">Pause</div>
-        <div class="body-game-buttons">Reset</div>
+        <button class="body-game-buttons" onClick="Game.startGame()">Start/Reset</button>
+        <div class="body-game-buttons" onClick="Game.pauseGame()">Pause</div>
+        <!-- <div class="body-game-buttons" onClick="Game.resetGame()">Reset</div> -->
         <div class="body-music-toggle">Music Toggle</div>
       </div>
-      <div id="game-grid" class="body-middle">
 
-      </div>
+      <div id="game-grid" class="body-middle"></div>
+
       <div class="body-right">
-        <div class="body-score">Score</div>
-        <div class="body-high-scores">High Scores</div>
+        <div class="body-score" id="score">Score</div>
         <div class="body-about-rules">About/Rules</div>
       </div>
 
